@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-second-app';
+
+show=false;
+times: number [] = [];
+i=0;
+
+onClick(){
+  this.show=!this.show;
+  this.times[this.i]=this.i;
+  this.i++;
+  }
 }
